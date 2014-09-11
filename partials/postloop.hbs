@@ -5,19 +5,26 @@
 
 {{! This is the post loop - each post will be output using this markup }}
 {{#foreach posts}}
+
 <article class="{{post_class}}">
     <header class="post-header">
+        <span class="newsDate"><h4><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD'}}</time></h4><span><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='MMM'}}</time></span><span><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='YYYY'}}</time></span></span>
         <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>{{excerpt words="30"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+        <p>{{excerpt words="50"}}&hellip; <a class="read-more" href="{{url}}">&raquo;</a></p>
     </section>
-    <footer class="post-meta">
-        {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}}
-        {{author}}
-        {{tags prefix=" on "}}
-        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+    <footer class="post-footer">
+	    {{#if author}}
+                <section class="author">
+                    <img src="{{author.image}}" alt="Author" class="author-img" />
+                    <h4>{{author}}</h4>
+                </section>
+            {{/if}}
     </footer>
+    <section style="bottom:0px; position:absolute; border-top:1px solid #d3d3d3; font-size:12px; color:#999; width:90%">#Tags:
+        {{#tags}}<li>{{name}}</li>{{/tags}}
+    </section>
 </article>
 {{/foreach}}
 
