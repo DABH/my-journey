@@ -31,15 +31,12 @@
         <div class="fb-like" data-href="{{url absolute="true"}}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
 
         <footer class="post-footer">
-
             {{#if author}}
                 <section class="author">
                     <img src="{{author.image}}" alt="Author" class="author-img" />
                     <h4>{{author}}</h4>
-                    <p>Author</p>
                 </section>
             {{/if}}
-
             <section class="share">
                 <h4>Share this post</h4>
                 <a class="icon-twitter" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"
@@ -55,7 +52,6 @@
                     <span class="hidden">Google+</span>
                 </a>
             </section>
-
         </footer>
 
         {{/post}}
