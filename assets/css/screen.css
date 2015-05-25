@@ -632,6 +632,34 @@ table.plain {
 -o-transition: 0.2s ease-in;
 
 }
+
+
+#top-menu {
+    float: right;
+    position: absolute;
+    top: 35px;
+    right: 200px;
+}
+
+
+#top-menu li {
+    float: right;
+    margin: 0 0 0 30px;
+}
+
+#top-menu li a {
+    text-decoration: none;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#top-menu li a:hover {
+    text-decoration: underline;
+}
+
+
+
 /* ==========================================================================
    5. Single Post - When you click on an individual post
    ========================================================================== */
