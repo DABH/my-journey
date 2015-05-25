@@ -16,6 +16,8 @@
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
     <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+    {{! The CSS file for Prism.js (syntax highlighting }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
@@ -56,10 +58,12 @@
 
     {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+    {{! The JavaScript file for Prism.js (syntax highlighting) }}
+    <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
 
 
 <script type="text/javascript">
-    <!-- TODO: CHANGE DISQUS SHORTNAME TO YOUR OWN -->
+    {{! TODO: CHANGE DISQUS SHORTNAME TO YOUR OWN }}
     var disqus_shortname = 'arcanagq';
 
 (function () {
