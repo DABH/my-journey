@@ -359,7 +359,7 @@ table.plain {
 
 /* Centres vertically yo. (IE8+) */
 .vertical {
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.8);
     -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
     height: 58px;
@@ -429,7 +429,7 @@ table.plain {
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 0;
-    color: #ccc;
+    color: #000;
     text-indent: 10px;
 }
 
