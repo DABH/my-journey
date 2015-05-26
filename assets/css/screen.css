@@ -659,9 +659,9 @@ table.plain {
 }
 
 .search-field-span {
-    display: block;
     overflow: hidden;
     padding-right: 5px;
+    width: 100%;
 }
 
 .search-field-input {
