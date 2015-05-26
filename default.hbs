@@ -33,17 +33,18 @@
 		    {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
 		    <a href="/"><h1 class="blog-title">{{@blog.title}}</h1></a>
 		    <h2 class="blog-description">{{@blog.description}}</h2>
+<form>
+  <input id="search-field" />
+  <input type="submit" value="search">
+</form>
 		</div>
                 <ul id="top-menu">
                     <li><a href="/a-propos">A propos</a></li>
                 </ul>
-        <form>
-  <input id="search-field" />
-  <input type="submit" value="search">
-</form>
-<section id="results"></section>
 	    </div>
 	</header>
+
+<section id="results"></section>
 
     {{! Everything else gets inserted here }}
     {{{body}}}
