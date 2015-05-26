@@ -658,6 +658,15 @@ table.plain {
     text-decoration: underline;
 }
 
+#search-field-span {
+    display: block;
+    overflow: hidden;
+    padding-right: 5px;
+}
+
+#search-field-input {
+    width: 100%;
+}
 
 
 /* ==========================================================================
